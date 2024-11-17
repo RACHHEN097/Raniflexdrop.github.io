@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", monospace;
+}
+ul {
+  list-style: none;
+  background: rgb(4, 181, 240);
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+ul li ul.dropdown li {
+  display: block;
+}
+ul li ul.dropdown {
+  width: 100%;
+  background: rgb(30, 76, 55);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+ul li a:hover {
+  background: rgb(5, 81, 129);
+}
+ul li:hover ul.dropdown {
+  display: block;
+}
+h1 {
+  text-align: center;
+}
